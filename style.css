@@ -13,7 +13,7 @@
         flex-direction: column;
       }
 
-      /* Header */
+    
       header {
         display: flex;
         justify-content: space-between;
@@ -29,7 +29,7 @@
         font-weight: bold;
       }
 
-      /* Mobile menu button */
+    
       .menu-toggle {
         display: none;
         background: none;
@@ -54,8 +54,6 @@
       nav a:hover {
         text-decoration: underline;
       }
-
-      /* Main Layout using CSS Grid */
       .container {
         display: grid;
         grid-template-columns: 200px 1fr;
@@ -64,7 +62,6 @@
         padding: 1rem;
       }
 
-      /* Sidebar */
       aside {
         background-color: #fff;
         padding: 1.5rem;
@@ -92,7 +89,6 @@
         background-color: #eef2f8;
       }
 
-      /* Main Content */
       main {
         background-color: #fff;
         padding: 2rem;
@@ -110,7 +106,6 @@
         line-height: 1.6;
       }
 
-      /* Footer */
       footer {
         text-align: center;
         padding: 1rem;
@@ -119,7 +114,7 @@
         font-size: 0.9rem;
       }
 
-      /* Responsive Design */
+    
       @media (max-width: 768px) {
         .menu-toggle {
           display: block;
