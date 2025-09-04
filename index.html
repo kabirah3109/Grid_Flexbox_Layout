@@ -1,53 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Day 4 | Dashboard - Grid & Flexbox</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="logo">Dashboard</div>
+      <div class="logo">Dashboard</div>
 
-        <!-- Hidden checkbox -->
-        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-        
-        <!-- Hamburger icon -->
-        <label for="menu-toggle" class="menu-icon">☰</label>
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
 
-        <!-- Top Navigation -->
-        <nav class="top-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Logout</a></li>
-            </ul>
-        </nav>
+      <label for="menu-toggle" class="menu-icon">☰</label>
+
+      <nav class="top-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
     </header>
 
     <div class="container">
-        <aside id="sidebar">
-            <h3>Menu</h3>
-            <ul>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Analytics</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Reports</a></li>
-            </ul>
-        </aside>
-        <main>
-            <h2>Welcome to Our Dashboard</h2>
-            <p>
-                This layout uses <strong>CSS Grid</strong> for the overall structure
-                and <strong>Flexbox</strong> for alignment inside components like the
-                header and sidebar.
-            </p>
-        </main>
+      <aside id="sidebar">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Reports</a></li>
+        </ul>
+      </aside>
+      <main>
+        <h2>Welcome to Our Dashboard</h2>
+        <p>
+          This layout uses <strong>CSS Grid</strong> for the overall structure
+          and <strong>Flexbox</strong> for alignment inside components like the
+          header and sidebar.
+        </p>
+      </main>
     </div>
 
     <footer>&copy; 2025 Dashboard App. All rights reserved.</footer>
-</body>
+  </body>
 </html>
