@@ -62,12 +62,12 @@
         padding: 1rem;
       }
 
-      aside {
-        background-color: #fff;
-        padding: 1.5rem;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      }
+        aside {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
 
       aside ul {
         display: flex;
@@ -115,7 +115,7 @@
       }
 
     
-      @media (max-width: 768px) {
+      /* @media (max-width: 768px) {
         .menu-toggle {
           display: block;
         }
@@ -137,9 +137,9 @@
         
         .container {
           grid-template-columns: 1fr;
-        }
+        } */
         
-        aside {
+        /* aside {
           display: none;
         }
         
@@ -153,9 +153,15 @@
           max-width: 250px;
           z-index: 100;
           border-radius: 0;
-        }
+        } */
+         /* aside {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+} */
         
-        .overlay {
+        /* .overlay {
           display: none;
           position: fixed;
           top: 0;
@@ -168,7 +174,83 @@
         
         .overlay.active {
           display: block;
-        }
-      } 
+        } */
+      /* }  */
+@media (max-width: 768px) {
+  /* Show hamburger icon */
+  .menu-icon {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    z-index: 100;
+  }
 
+  /* Hide checkbox */
+  .menu-checkbox {
+    display: none;
+  }
+
+  .menu-checkbox:checked ~ .top-nav {
+    display: block;
+  }
+
+  /* Style for mobile nav */
+  .top-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #4a6fa5;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+  }
+
+  .top-nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .top-nav li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .top-nav a {
+    padding: 1rem 1.5rem;
+    display: block;
+  }
+
+  /* Layout */
+  .container {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+  }
+
+  aside {
+    display: block;
+    position: static;
+    height: auto;
+    width: auto;
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Hide overlay (not needed without JS) */
+  .overlay {
+    display: none !important;
+  }
+
+  footer {
+    font-size: 0.85rem;
+    padding: 0.8rem;
+  }
+}
 
